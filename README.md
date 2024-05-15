@@ -20,3 +20,6 @@ Feed Forward: Processes the outputs from the previous steps to generate the fina
 Add & Normalize: Final normalization step to ensure output stability.<br>
 
 This architecture is designed to handle the complexities of sequence data inherent in time series forecasting, enabling effective learning and prediction of future values based on past data.
+
+
+![Model](images/Network.png)<br>
