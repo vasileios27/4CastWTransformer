@@ -1,4 +1,6 @@
 # 4CastWTransformer
+The primary objective of the main network is forecasting, complemented by a secondary function of generating textual descriptions of its forecasts. This text generation is not central to the main task, but rather is developed during a secondary training phase that leverages auxiliary information. The aim here is to utilize textual data to train the network in accurately describing its forecasted outputs. A critical component in this process is the Q-layer, essentially a separate network designed specifically for text generation. The effectiveness of the Q-layer is measured by comparing its output against external evidence, ensuring the descriptions are both accurate and relevant.
+![Model](images/Network.png)<br>
 
 ![Encoder-Decoder Model](images/Layers.png)<br>
 The diagram illustrates the core architecture of the Transformer model specifically tailored for time series forecasting tasks. It consists of two main components:
@@ -20,6 +22,3 @@ Feed Forward: Processes the outputs from the previous steps to generate the fina
 Add & Normalize: Final normalization step to ensure output stability.<br>
 
 This architecture is designed to handle the complexities of sequence data inherent in time series forecasting, enabling effective learning and prediction of future values based on past data.
-
-
-![Model](images/Network.png)<br>
